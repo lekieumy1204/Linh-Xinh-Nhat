@@ -83,13 +83,18 @@
         bgMusic.volume = 1.0; 
 
         const loader = new THREE.TextureLoader();
+        
+        // --- CHANGED SECTION START ---
+        // Images must be in the same folder as this HTML file
         const photoFiles = [
-            'https://picsum.photos/id/237/200/200', 
-            'https://picsum.photos/id/1025/200/200', 
-            'https://picsum.photos/id/1003/200/200', 
-            'https://picsum.photos/id/1074/200/200', 
-            'https://picsum.photos/id/1084/200/200'
+            'image1.jpg', 
+            'image2.jpg', 
+            'image3.jpg', 
+            'image4.jpg', 
+            'image5.jpg'
         ];
+        // --- CHANGED SECTION END ---
+
         loader.setCrossOrigin('anonymous');
         
         const photoTextures = [];
@@ -631,5 +636,4 @@
         });
     </script>
 </body>
-
 </html>
